@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="EditActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Uang :"
+                android:textColor="#000"
+                />
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:id="@+id/radio_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_masuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MASUK" />
+
+                <RadioButton
+                    android:id="@+id/radio_keluar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KELUAR" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/edit_jumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rp. "
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edit_keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="Keterangan"
+                android:maxLines="10"
+                android:minLines="5" />
+
+            <EditText
+                android:id="@+id/edit_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Tanggal" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_margin="30dp"
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:text="SIMPAN PERUBAHAN"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
